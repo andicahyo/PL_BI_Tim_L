@@ -104,3 +104,7 @@ Berikut tampilan dashboard yang telah dibuat:
 ## 4.2. Form Kesehatan Ibu dan Anak - Application Demonstration
 Melihat adanya kekosongan data mengenai informasi kesehatan yang bersumber dari publikasi pemerintahan, kelompok kami merancang sebuah aplikasi ringkas untuk mempermudah proses pengumpulan data informasi kesehatan Ibu dan Anak.
 Untuk mengatasi hal tersebut, kami merancang aplikasi berbasis Google Form dengan keunggulan: (1) desain ringan, mudah diakses, dan hemat pemakaian kuota data, (2) data dalam formulir aplikasi tersebut dapat diatur berdasarkan kebutuhan, (3) data disimpan dalam cloud server secara otomatis, (4) data formulir langsung tersimpan dalam bentuk excel, dan (5) data sharing dapat dilakukan dengan mudah melalui Google Drive.
+
+![FLOW_GFORM](https://user-images.githubusercontent.com/102814373/189521890-1a8777ac-58d0-4c4e-aee2-9a254b44d950.png)
+
+![recap_gform](https://user-images.githubusercontent.com/102814373/189521909-69e272c5-e06c-4553-af24-38c1fa92b18f.png)
