@@ -71,6 +71,30 @@ Ingin mengetahui data kesehatan ibu dan anak yang tercatat oleh Posyandu di daer
   * Pengolahan dataset dengan menggunakan pemrograman python
   * Dataset ready dan visualisasi menggunakan Tableau Public.
 
+### 3.1.1 EDA + Wrangling data
+```python
+# DROP KOLOM YANG TIDAK DIBUTUHKAN DARI DATASET
+gizi_kurang.drop(['kode_provinsi', 'nama_provinsi', 'satuan'], axis=1, inplace=True)
+gizi_buruk.drop(['kode_provinsi', 'nama_provinsi', 'satuan'], axis=1, inplace=True)
+status_kelahiran.drop(['kode_provinsi', 'nama_provinsi', 'satuan'], axis=1, inplace=True)
+
+# AMBIL TAHUN >=2017 DARI DATASET 
+gizi_buruk = gizi_buruk[gizi_buruk['tahun'] >=2017]
+status_kelahiran = status_kelahiran[status_kelahiran['status_kelahiran'] == 'HIDUP']
+status_kelahiran = status_kelahiran[status_kelahiran['tahun'] >=2017]
+
+# LAKUKAN GROUPING DATA UNTUK MENENTUKAN JUMLAH DATA KELAHIRAN
+gizi_kurang = gizi_kurang.groupby(['tahun', 'kode_kabupaten_kota','nama_kabupaten_kota'])['jumlah_balita'].sum().reset_index()
+gizi_buruk = gizi_buruk.groupby(['tahun', 'kode_kabupaten_kota','nama_kabupaten_kota'])['jumlah_bayi'].sum().reset_index()
+status_kelahiran = status_kelahiran.groupby(['tahun', 'kode_kabupaten_kota','nama_kabupaten_kota'])['jumlah_kelahiran'].sum().reset_index()
+
+# MERGE FINAL DATA DIATAS
+final_data = pd.merge(status_kelahiran, data_gizi, how='outer', on =['kode_kabupaten_kota', 'nama_kabupaten_kota', 'tahun'])
+final_data['tahun']= pd.to_datetime(final_data['tahun'], format= '%Y')
+
+final_data.index.name = "nomor"
+```
+
 ### 3.2 User Flow
   User Flow project ini dibagi dalam 2 kelompok berdasarkan aplikasi yang digunakan. Kelompok pertama, yaitu penggunaan Dashboard untuk melihat data kesehatan melalui Tableau. Kelompok kedua, yaitu proses pengumpulan data kesehatan Ibu dan Anak melalui aplikasi Google Form.
   Berdasarkan user persona yang telah dibuat, terdapat 2 tipe pengguna dashboard. Tipe user pertama adalah masyarakat umum yang ingin mengetahui gambaran informasi kesehatan Ibu dan Anak di wilayah Provinsi Jawa Barat. Tipe user kedua merupakan Petugas Posyandu ataupun Petugas Puskesmas yang menggunakan dashboard untuk menyusun program penyuluhan kesehatan yang tepat sasaran berdasarkan isu di wilayah Kabupaten/Kota tersebut.
