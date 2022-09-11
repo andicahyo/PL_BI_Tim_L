@@ -97,8 +97,9 @@ Data yang telah terkumpul akan diolah oleh tim Data untuk memperbaharui informas
  * Control Panel: Panel kendali untuk mengatur rentang variabel pada dashboard
  * Geomaps: Menampilkan peta kabupaten/kota pada provinsi Jawa barat beserta informasi kesehatan pada tooltipsnya
  * Bar dan Line chart: untuk menyajikan grafik pada variabel tertentu.
- 
+
 Berikut tampilan dashboard yang telah dibuat:
+
 ![](https://cdn.discordapp.com/attachments/712435030781067264/1018459729065947186/unknown.png)
 
 ## 4.2. Form Kesehatan Ibu dan Anak - Application Demonstration
