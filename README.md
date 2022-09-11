@@ -94,6 +94,7 @@ final_data['tahun']= pd.to_datetime(final_data['tahun'], format= '%Y')
 
 final_data.index.name = "nomor"
 ```
+  Detail wrangling data bisa dilihat di dalam folder 'notebook'
 
 ### 3.2 User Flow
   User Flow project ini dibagi dalam 2 kelompok berdasarkan aplikasi yang digunakan. Kelompok pertama, yaitu penggunaan Dashboard untuk melihat data kesehatan melalui Tableau. Kelompok kedua, yaitu proses pengumpulan data kesehatan Ibu dan Anak melalui aplikasi Google Form.
