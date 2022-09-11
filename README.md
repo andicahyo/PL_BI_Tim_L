@@ -93,3 +93,14 @@ C. Alur untuk alokasi sumber daya oleh Puskesmas
 User Flow berikut menggambarkan proses pengumpulan data yang dilakukan oleh Petugas Posyandu melalui aplikasi Google Form. 
 Data yang telah terkumpul akan diolah oleh tim Data untuk memperbaharui informasi yang disajikan pada Dashboard Kesehatan Ibu dan Anak.
 ![](https://cdn.discordapp.com/attachments/1013003936212459561/1018065561734885386/FLOW_02.png)
+## 4.1 Dashboard Kesehatan Ibu dan Anak - MVP Demonstration
+ * Control Panel: Panel kendali untuk mengatur rentang variabel pada dashboard
+ * Geomaps: Menampilkan peta kabupaten/kota pada provinsi Jawa barat beserta informasi kesehatan pada tooltipsnya
+ * Bar dan Line chart: untuk menyajikan grafik pada variabel tertentu.
+ 
+Berikut tampilan dashboard yang telah dibuat:
+![](https://cdn.discordapp.com/attachments/712435030781067264/1018459729065947186/unknown.png)
+
+## 4.2. Form Kesehatan Ibu dan Anak - Application Demonstration
+Melihat adanya kekosongan data mengenai informasi kesehatan yang bersumber dari publikasi pemerintahan, kelompok kami merancang sebuah aplikasi ringkas untuk mempermudah proses pengumpulan data informasi kesehatan Ibu dan Anak.
+Untuk mengatasi hal tersebut, kami merancang aplikasi berbasis Google Form dengan keunggulan: (1) desain ringan, mudah diakses, dan hemat pemakaian kuota data, (2) data dalam formulir aplikasi tersebut dapat diatur berdasarkan kebutuhan, (3) data disimpan dalam cloud server secara otomatis, (4) data formulir langsung tersimpan dalam bentuk excel, dan (5) data sharing dapat dilakukan dengan mudah melalui Google Drive.
