@@ -136,5 +136,5 @@ Untuk mengatasi hal tersebut, kami merancang aplikasi berbasis Google Form denga
 
 
 ### Referense 
-Brainstorming board: [miro](https://miro.com/app/board/uXjVPceKE1w=/?share_link_id=9592509117)
-MVP - Dashboard: [tableau](https://public.tableau.com/app/profile/andi.cahyono/viz/DashboardKesehatanIbudanAnak/MVP_Dashboard#1)
+- Brainstorming board: [miro](https://miro.com/app/board/uXjVPceKE1w=/?share_link_id=9592509117)
+- MVP - Dashboard: [tableau](https://public.tableau.com/app/profile/andi.cahyono/viz/DashboardKesehatanIbudanAnak/MVP_Dashboard#1)
